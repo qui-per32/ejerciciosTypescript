@@ -1,5 +1,5 @@
-var n = 10;
-while(n >= 0){
-    alert(n);
-    n--;
+var a = 10;
+while(a >= 0){
+    alert(a);
+    a--;
 }

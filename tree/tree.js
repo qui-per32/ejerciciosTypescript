@@ -1,17 +1,17 @@
-var numIntroducido = prompt("Introduce un numero de líneas para dibujar un árbol: ");
-var num = parseInt(numIntroducido);
-var espacio = "&nbsp&nbsp";
+var numEnter = prompt("Introduce un numero de líneas para dibujar un árbol: ");
+var num = parseInt(numEnter);
+var space = "&nbsp&nbsp";
 if (num < 5) {
     alert('Debes introducir un numero mayor de 5');
 }
 else {
     var a = "<br>";
-    var j = 1;
-    for (var i = 0; i < num; i++, j = i + 1) {
-        for (j; j < num; j++) {
-            (a += espacio);
+    var x = 1;
+    for (var i = 0; i < num; i++, x = i + 1) {
+        for (x; x < num; x++) {
+            (a += space);
         }
-        for (j = 0; j < 2 * i + 1; j++) {
+        for (x = 0; x < 2 * i + 1; x++) {
             (a += "*");
         }
         a += "<br>";

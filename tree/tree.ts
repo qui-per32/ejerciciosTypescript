@@ -1,7 +1,7 @@
-var numIntroducido = prompt("Introduce un numero de líneas para dibujar un árbol: ");
-var num = parseInt(numIntroducido);
+var numEnter = prompt("Introduce un numero de líneas para dibujar un árbol: ");
+var num = parseInt(numEnter);
 
-var espacio: string = "&nbsp&nbsp";
+var space: string = "&nbsp&nbsp";
 
 if (num < 5) 
 {
@@ -10,13 +10,13 @@ if (num < 5)
 else 
 {
     var a = "<br>";
-    var j = 1;
-    for (var i = 0; i < num; i++, j = i + 1) 
+    var x = 1;
+    for (var i = 0; i < num; i++, x = i + 1) 
     {
-        for (j; j < num; j++){
-           (a += espacio); 
+        for (x; x < num; x++){
+           (a += space); 
         } 
-        for (j = 0; j < 2 * i + 1; j++)
+        for (x = 0; x < 2 * i + 1; x++)
         {
             (a += "*");
         }
